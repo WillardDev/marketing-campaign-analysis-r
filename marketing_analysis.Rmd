@@ -1,0 +1,124 @@
+---
+title: "Marketing Campaign Response Analysis"
+author: "Data Analyst"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+```
+
+## Marketing Campaign Analysis Report
+
+### Introduction
+This analysis explores the relationships between various customer characteristics and their response to our marketing campaign. We analyzed multiple variables including deals purchased, spending patterns, education levels, and purchase channels to understand what drives customer response.
+
+### Key Findings
+
+#### 1. Deal Engagement Patterns
+```{r deals-plot}
+# Plot code would go here - shown in first plot of Image 1
+```
+The histogram of deals purchased shows:
+- Most customers engage with 0-5 deals
+- Responsive customers (in blue) tend to participate in more deals
+- The highest response rate is among customers who purchased 2-4 deals
+- Deal engagement drops significantly after 8 deals
+
+#### 2. Spending Patterns and Income
+```{r spending-income}
+# Plot code would go here - shown in second plot of Image 1
+```
+The scatter plot of Total Spent vs Income reveals:
+- Strong positive correlation between income and spending
+- Higher income customers tend to be more responsive
+- Spending patterns cluster more densely in the lower to middle income ranges
+- Some high-income outliers show exceptional spending
+
+#### 3. Total Spending by Response
+```{r total-spent}
+# Plot code would go here - shown in third plot of Image 1
+```
+The boxplot analysis shows:
+- Responsive customers have significantly higher median spending
+- Wider spending range among responsive customers
+- Notable outliers in both groups
+- Higher quartile ranges for responsive customers
+
+#### 4. Product Category Analysis
+```{r product-distribution}
+# Plot code would go here - shown in fourth plot of Image 1
+```
+Product spending distribution reveals:
+- Wines category shows highest spending across both groups
+- Gold products show second-highest spending potential
+- Meat and fish products show moderate spending levels
+- Fruits and sweets show lower but consistent spending patterns
+- Responsive customers spend more across all categories
+
+#### 5. Education Level Impact
+```{r education-response}
+# Plot code would go here - shown in fifth plot of Image 1
+```
+Education level analysis shows:
+- PhD holders have the highest response rate
+- Master's degree holders show second-highest response rate
+- Basic education level shows lowest response rate
+- Graduation level shows moderate response rate
+- Education level correlates positively with campaign response
+
+#### 6. Purchase Channel Analysis
+```{r purchase-channels}
+# Plot code would go here - shown in sixth plot of Image 1
+```
+Channel distribution indicates:
+- Web purchases show highest engagement
+- Store purchases show moderate but consistent engagement
+- Catalog purchases show most distinct difference between responsive and non-responsive customers
+- Responsive customers engage more across all channels
+
+#### 7. Income Distribution
+```{r income-dist}
+# Plot code would go here - shown in first plot of Image 2
+```
+Income analysis reveals:
+- Similar median income between responsive and non-responsive customers
+- Slightly higher variability in income for responsive customers
+- Presence of high-income outliers in both groups
+- Income alone is not a definitive predictor of response
+
+#### 8. Age Distribution
+```{r age-dist}
+# Plot code would go here - shown in second plot of Image 2
+```
+Age distribution shows:
+- Peak response rate in the 45-65 age range
+- Lower response rates among younger customers (25-35)
+- Declining response rates after age 70
+- Middle-aged customers form the core responsive group
+
+### Conclusions and Recommendations
+
+1. **Target Demographics:**
+   - Focus on middle-aged customers (45-65)
+   - Prioritize higher education level segments
+   - Consider income levels in campaign targeting
+
+2. **Channel Strategy:**
+   - Maintain strong web presence
+   - Optimize catalog marketing for better conversion
+   - Integrate store and online experiences
+
+3. **Product Focus:**
+   - Leverage wine category as primary driver
+   - Bundle gold products with other categories
+   - Develop targeted promotions for meat and fish products
+
+4. **Deal Structure:**
+   - Optimize deal frequency to 2-4 per customer
+   - Create tiered deal structure based on spending patterns
+   - Design education-level specific promotions
